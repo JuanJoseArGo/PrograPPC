@@ -1,0 +1,44 @@
+{% extends "base.html" %}
+
+{%block titulo%} Equipo {%endblock%}
+
+{%block contenido%}
+    <h1> DATOS ENVIADOS: </h1>
+<body>
+  <p>Vendedor: {{dict.Vendedor}}</p> 
+  <p>Seller Score: {{dict.Seller_Score}}</p>
+  <p>Región: {{dict.Region}}</p>
+  <p>Canal: {{dict.Canal}}</p>
+  <p>Campaña: {{dict.Campaña}}</p>
+  <p>Medio: {{dict.Medio}}</p>
+  <p>Producto: {{dict.Producto}}</p>
+  <p>Calificacion prospecto: {{dict.prueba}}</p>
+
+  <h1>Vendedor sugerido:</h1>
+  
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th>Vendedor</th>
+        <th>Maxima proyeccion</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for key, value in dict2.items %}
+        <tr>
+          <td>{{ key }}</td>
+          <td>{{ value }}</td>
+        </tr>
+      {% endfor %}
+      {% for key, value in dict3.items %}
+        <tr>
+          <td>{{ key }}</td>
+          <td>{{ value }}</td>
+        </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+</body>
+
+  {%endblock%}
+

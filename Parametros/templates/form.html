@@ -1,0 +1,188 @@
+<form action="datos/" method="post"> 
+  {% csrf_token %}
+  <ul>
+   <li>
+    <select id="vendedor" name="Vendedor">
+      <option value="">Selecciona un vendedor</option>
+      <option value="Martin Garcia">Martin Garcia</option>
+      <option value="DragonTECH">DragonTECH</option>
+      <option value="Gabriel Aguirre">Gabriel Aguirre</option>
+      <option value="Jorge Castañeda">Jorge Castañeda</option>
+      <option value="ALfonso Negrete">Alfonso Negrete</option>
+      <option value="Viridiana Gonzalez">Viridiana Gonzalez</option>
+      <option value="Christian Llanos">Christian Llanos</option>
+      <option value="Guillermo Hernandez">Guillermo Hernandez</option>
+    </select>
+   </li>
+   <li> 
+   <select id="estado" name="Estado">
+     <option value="">Selecciona un estado</option>
+     <option value="Aguascalientes">Aguascalientes</option>
+     <option value="Baja California">Baja California</option>
+     <option value="Baja California Sur">Baja California Sur</option>
+     <option value="Campeche">Campeche</option>
+     <option value="CDMX">Ciudad de México</option>
+     <option value="Chiapas">Chiapas</option>
+     <option value="Chihuahua">Chihuahua</option>
+     <option value="Coahuila">Coahuila</option>
+     <option value="Colima">Colima</option>
+     <option value="Durango">Durango</option>
+     <option value="Estado de México">Estado de México</option>
+     <option value="Guanajuato">Guanajuato</option>
+     <option value="Guerrero">Guerrero</option>
+     <option value="Hidalgo">Hidalgo</option>
+     <option value="Jalisco">Jalisco</option>
+     <option value="Michoacán">Michoacán</option>
+     <option value="Morelos">Morelos</option>
+     <option value="Nayarit">Nayarit</option>
+     <option value="Nuevo León">Nuevo León</option>
+     <option value="Oaxaca">Oaxaca</option>
+     <option value="Puebla">Puebla</option>
+     <option value="Querétaro">Querétaro</option>
+     <option value="Quintana Roo">Quintana Roo</option>
+     <option value="San Luis Potosí">San Luis Potosí</option>
+     <option value="Sinaloa">Sinaloa</option>
+     <option value="Sonora">Sonora</option>
+     <option value="Tabasco">Tabasco</option>
+     <option value="Tamaulipas">Tamaulipas</option>
+     <option value="Tlaxcala">Tlaxcala</option>
+     <option value="Veracruz">Veracruz</option>
+     <option value="Yucatán">Yucatán</option>
+     <option value="Zacatecas">Zacatecas</option>
+     <option value="North Carolina">North Carolina</option>
+     <option value="New Jersey">New Jersey</option>
+     <option value="California">California</option>
+     <option value="Florida">Florida</option>
+     <option value="Michigan">Michigan  </option>
+     <option value="New York">New York</option>
+     <option value="Mississippi">Mississippi</option>
+     <option value="Iowa">Iowa</option>
+     <option value="Arizona">Arizona</option>
+     <option value="Texas">Texas</option>
+     <option value="Minnesota">Minnesota</option>
+     <option value="British Columbia">British Columbia</option>
+     <option value="Illinois">Illinois</option>
+     <option value="Indiana">Indiana</option>
+   </select>
+  </li>
+<li>
+  <select id="canal" name="Canal">
+    <option value="">Selecciona un canal</option>
+    <option value="Instagram">Instagram</option>
+    <option value="WhatsApp QR">WhatsApp QR</option>
+    <option value="Facebook Ads">Facebook Ads</option>
+  </select>
+</li>
+<li>
+  <select id="campaña" name="Campaña">
+    <option value="">Selecciona una campaña</option>
+    <option value="Lead Gen">Lead Gen</option>
+    <option value="QR-Stand">QR Stand</option>
+    <option value="QR-Tapial">QR-Tapial</option>
+    <option value="'QR-PubliAndantes">'QR-PubliAndantes</option>
+  </select>
+</li>
+<li>
+  <select id="medio" name="Medio">
+    <option value="">Selecciona el Medio</option>
+    <option value="Online">Online</option>
+    <option value="WhatsApp">WhatsApp</option>
+  </select>
+</li>
+<li>
+  <select id="producto" name="Producto">
+    <option value="">Selecciona el producto</option>
+    <option value="Ciudad Acuña">Ciudad Acuña</option>
+    <option value="Explanada Puebla">Explanada Puebla</option>
+    <option value="Galerías Insurgentes">Galerías Insurgentes</option>
+    <option value="Galerías La Paz">Galerías La Paz</option>
+    <option value="'Hermosillo Progreso">'Hermosillo Progreso</option>
+    <option value="Paseo la Joya">Paseo la Joya</option>
+    <option value="Plaza Real">Plaza Real</option>
+    <option value="Reforma 222">Reforma 222</option>
+    <option value="Sendero Villahermosa">Sendero Villahermosa</option>
+    <option value="Tulum">Tulum</option>
+  </select>
+</li>
+<li>
+  <select id="Tipo" name="Tipo">
+    <option value="">Modelo de programación</option>
+    <option value="0">Secuencial</option>
+    <option value="1">Paralelo</option>
+  </select>
+</li>
+   <li class="button">
+    <button type="submit">Envíe su mensaje</button>
+  </li>
+ </form>
+
+ <style>
+
+ form {
+  /* Centrar el formulario en la página */
+  margin: 0 auto;
+  width: 400px;
+  /* Esquema del formulario */
+  padding: 1em;
+  border: 5px solid #CCC;
+  border-radius: 2em;
+}
+
+select{
+  padding: 1em;
+  border: 4px solid #DC7E6A;
+  border-radius: 1em;
+  width: 300px
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+form li + li {
+  margin-top: 1em;
+}
+
+input,
+textarea {
+  /* Para asegurarse de que todos los campos de texto tienen la misma configuración de letra
+     Por defecto, las áreas de texto tienen un tipo de letra monoespaciada */
+  font: 1em sans-serif;
+
+  /* Tamaño uniforme del campo de texto */
+  width: 300px;
+  box-sizing: border-box;
+
+  /* Hacer coincidir los bordes del campo del formulario */
+  border: 1px solid #999;
+}
+
+input:focus,
+textarea:focus {
+  /* Destacado adicional para elementos que tienen el cursor */
+  border-color: #000;
+}
+
+textarea {
+  /* Alinear los campos de texto multilínea con sus etiquetas */
+  vertical-align: top;
+
+  /* Proporcionar espacio para escribir texto */
+  height: 5em;
+}
+
+.button {
+  /* Alinear los botones con los campos de texto */
+  padding-left: 90px; /* mismo tamaño que los elementos de la etiqueta */
+}
+
+button {
+  /* Este margen adicional representa aproximadamente el mismo espacio que el espacio
+     entre las etiquetas y sus campos de texto */
+  margin-left: .5em;
+  border-color: #DC7E6A
+}
+
+</style>

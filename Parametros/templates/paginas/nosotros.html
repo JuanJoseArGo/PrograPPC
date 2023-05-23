@@ -1,0 +1,51 @@
+{% extends "base.html" %}
+
+{%block titulo%} Equipo {%endblock%}
+
+{%block contenido%}
+
+<table class="content-table"> 
+  <thead> <tr> 
+    <th>Nombre</th> 
+    <th>No.cuenta</th>
+    <th>Puesto</th>
+    </tr> 
+    </thead> 
+    <tbody>
+       <tr> 
+         <td>Armenta Gonzalez Juan José</td> <td>23222222</td> <td>Analista de Datos</td> </tr>
+        <td>Chávez Herrera María Itzel</td> <td>317163113</td> <td>Diseñadora </td> </tr>
+        <tr> <td>Díaz Uribe Luis Felipe</td> <td>317226793</td> <td>Vendedor</td> 
+        </tr>
+        <tr> <td>Padilla Arrieta Erick</td> <td>317260683</td> <td>Marketing</td> 
+        </tr>
+        <tr> <td>Zavala Elizondo Fernando</td> <td>316073996</td> <td>PM</td> 
+        </tr> 
+    </tbody> 
+    </table>
+
+<style>
+  .content-table { 
+    border-collapse: collapse; 
+    margin: 25px 0; 
+    font-size: 1em; 
+    font-family: sans-serif; 
+    min-width: 450px; 
+    box-shadow: 0 0 20px 
+    rgba(0, 0, 0, 0.15); }
+  .content-table thead tr { 
+    background-color: #980081; 
+    color: #ffffff; 
+    text-align: middle; }
+  .content-table th, .content-table td { 
+    padding: 12px 15px; }
+  .content-table tbody tr { 
+    border-bottom: 1px solid #dddddd; } 
+    .content-table tbody tr:nth-of-type(even) {
+       background-color: #f3f3f3; } 
+       .content-table tbody tr:last-of-type { 
+        border-bottom: 2px solid #009879; }
+</style>
+
+  {%endblock%}
+
